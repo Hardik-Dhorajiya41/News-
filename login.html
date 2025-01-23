@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Gujarati News Channel</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="Live_Gujarat_News_Logo.png" alt="Gujarati News Channel Logo" class="logo"> <!-- Logo -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login">
+            <h2>Editor Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gujarati News Channel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Link to external JS file -->
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* News section */
+.news ul {
+    padding: 0;
+    list-style: none;
+}
+
+.news ul li {
+    margin: 10px 0;
+}
+
+.news ul li a {
+    text-decoration: none;
+    color: #004d99;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #004d99;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Login page form */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #004d99;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #003366;
+}
+
+/* Contact form */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: #004d99;
+}
+
+.contact-container textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-container input,
+.contact-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-container button {
+    background-color: #004d99;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    background-color: #003366;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Tablet and below */
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Login and Contact forms */
+    .login-container, .contact-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Header adjustments */
+    header {
+        padding: 15px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Adjusting text for mobile */
+    .login-container h2, .contact-container h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+/* Mobile-first tweaks */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .login-container h2,
+    .contact-container h2 {
+        font-size: 1.2em;
+    }
+
+    .login-container input,
+    .contact-container input,
+    .contact-container textarea,
+    .login-container button,
+    .contact-container button {
+        padding: 12px;
+    }
+}

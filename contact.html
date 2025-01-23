@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gujarati News Channel</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="Live_Gujarat_News_Logo.png" alt="ગુજરાતી ન્યૂઝ લોગો" class="logo"> <!-- Logo -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Submit Your News</h2>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">News Details:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="contactMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gujarati News Channel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Link to external JS file -->
+</body>
+</html>
